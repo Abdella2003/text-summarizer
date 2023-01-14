@@ -1,0 +1,6 @@
+def summarize_text(text, length):
+    words = text.split()
+    if len(words) <= length:
+        return text
+    summary = ' '.join(words[:length]) + '...'
+    return summary
